@@ -19,13 +19,14 @@ A serverless URL shortener built with .NET 8 Minimal API, AWS Lambda, and Dynamo
 ## 📂 Project Structure
 ```
 📦 url-shortener
-├── 📁 backend                 # .NET 8 Minimal API (AWS Lambda)
-│   ├── 📁 API                 # Minimal API project
-│   ├── 📁 Core                # Business Logic & Models
-│   ├── 📁 Infrastructure      # DynamoDB Services
-│   ├── 📁 tests               # Unit & Integration Tests
-│   ├── serverless.yml        # AWS Lambda & API Gateway config
-│   ├── Dockerfile            # Containerized local testing
+├── 📁 backend                  # .NET 8 Minimal API (AWS Lambda)
+│   ├── 📁 API                  # Minimal API project
+│   ├── 📁 Application          # Business Logic
+│   ├── 📁 Models               # Models
+│   ├── 📁 DataContext          # DynamoDB Services
+│   ├── 📁 tests                # Unit & Integration Tests
+│   ├── serverless.yml          # AWS Lambda & API Gateway config
+│   ├── Dockerfile              # Containerized local testing
 │   └── README.md
 │
 ├── 📁 frontend                # Angular Web Frontend

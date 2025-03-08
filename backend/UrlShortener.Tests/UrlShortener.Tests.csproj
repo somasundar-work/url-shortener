@@ -22,7 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UrlShortener.Models\UrlShortener.Models.csproj" />
+    <ProjectReference Include="..\UrlShortener.Application\UrlShortener.Application.csproj" />
     <ProjectReference Include="..\UrlShortener.API\UrlShortener.API.csproj" />
+    <ProjectReference Include="..\UrlShortener.Data\UrlShortener.Data.csproj" />
   </ItemGroup>
 
 </Project>

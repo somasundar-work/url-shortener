@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj" />
+    <ProjectReference Include="..\UrlShortener.Data\UrlShortener.Data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
