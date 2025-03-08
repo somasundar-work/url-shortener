@@ -2,6 +2,10 @@
   "printWidth": 120,
   "useTabs": false,
   "tabWidth": 4,
-  "trailingComma": true,
+  "trailingComma": "none",
+  "spaceAfterKeywords": true,
+  "spaceAfterControlFlowKeyword": true,
+  "newLineBeforeMembersInObjectInitializers": true,
+  "newLineBeforeMembersInAnonymousTypes": true,
   "includeGeneratedFiles": false
 }
