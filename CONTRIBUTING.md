@@ -7,7 +7,7 @@ Thank you for considering contributing to the URL Shortener project! We welcome 
 1. **Fork the Repository**: Click the "Fork" button at the top of the repository page to create your own copy.
 2. **Clone Your Fork**:
    ```sh
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/somasundar-work/url-shortener.git
    cd url-shortener
    ```
 3. **Create a New Branch**:
