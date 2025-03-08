@@ -1,22 +1,23 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 
-namespace UrlShortener.Models;
-
-[DynamoDBTable("ShortenedUrls")]
-public class ShortUrl
+namespace UrlShortener.Models
 {
-    [DynamoDBHashKey] // Partition Key
-    public string ShortCode { get; set; } = default!;
+    [DynamoDBTable("ShortenedUrls")]
+    public class ShortUrl
+    {
+        [DynamoDBHashKey]
+        public string ShortCode { get; set; } = default!;
 
-    [DynamoDBProperty]
-    public string LongUrl { get; set; } = default!;
+        [DynamoDBProperty]
+        public string LongUrl { get; set; } = default!;
 
-    [DynamoDBProperty]
-    public long CreatedAt { get; set; } = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        [DynamoDBProperty]
+        public long CreatedAt { get; set; } = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
-    [DynamoDBProperty]
-    public long Expiration { get; set; } // TTL for auto-delete
+        [DynamoDBProperty]
+        public long Expiration { get; set; }
 
-    [DynamoDBProperty]
-    public int Clicks { get; set; } = 0;
+        [DynamoDBProperty]
+        public int Clicks { get; set; } = 0;
+    }
 }
